@@ -1,0 +1,12 @@
+PATH=/usr/local/bin:$PATH
+
+export NVM_DIR="/Users/michael.large/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+###-tns-completion-start-###
+if [ -f /Users/michael.large/.tnsrc ]; then 
+    source /Users/michael.large/.tnsrc 
+fi
+###-tns-completion-end-###
